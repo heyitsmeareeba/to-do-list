@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO WEB APP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>TODO APP</h1>
+            <div id="task-input" style="display: none;">
+                <input type="text" id="todo-input" placeholder="Enter your task">
+                <button class="addTask" onclick="addTask()">Add Task</button>
+            </div>
+            <button class="add" id="add" onclick="toggleInput()">+</button>
+        </div>
+        <div class="card-2" id="task-list-container" style="display: none;">
+            <h2>Your Tasks</h2>
+            <ul id="todo-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
